@@ -5,17 +5,20 @@ Wenqi Ren, Jiaolong Yang, Senyou Deng, David Wipf, Xiaochun Cao, and Xin Tong
 Existing face deblurring methods only consider single frames and do not account for facial structure and identity information. These methods struggle to deblur face videos that exhibit significant pose variations and misalignment. In this paper we propose a novel face video deblurring network capitalizing on 3D facial priors. The model consists of two main branches: i) a face video deblurring subnetwork based on an encoder-decoder architecture, and ii) a 3D face reconstruction and rendering branch for predicting 3D priors of salient facial structures and identity knowledge. These structures encourage the deblurring branch to generate sharp faces with detailed structures. Our method leverages both image intensity and high-level identity information derived from the reconstructed 3D faces to deblur the input face video. Extensive experimental results demonstrate that the proposed algorithm performs favorably against the state-of-the-art methods.
 
 # Installation
+`./faceReconstruction/tf_mesh_renderer_installation.txt`
 
 
 # Running
 1. run `preprocess/generateAlignments.m` to generate `training_set/` or `testing_set/` and the image list of `datalist_train.txt` or `datalist_test.txt`. 
 
-2. run `facePointDetection/demo_landmark.m` to generate `dataset/videos_folder_list/face/`，and `dataset/videos_folder_list/bbox.txt`, where "bbox.txt" is the detected key points. For more information, please refer to [Deep Convolutional Network Cascade for Facial Point Detection](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm)
+2. run `facePointDetection/demo_landmark.m` to generate `dataset/[videos_folder_list]/face/`，and `dataset/[videos_folder_list]/bbox.txt`, where "bbox.txt" is the detected five key points of faces. For more information, please refer to [Deep Convolutional Network Cascade for Facial Point Detection](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm)
 
-3. 
+3. run `demo.py` to generate the 3D facial relevant vector under `training_set/[videos_folder_list]/face/`.
+
+4. run `demo_render.py` to generate the rendered face results under `dataset/[videos_folder_list]/face_render/`.  
 
 
-# Scripts and pre-trained models
+# Pre-trained models
 Download the [pre-trained model](https://drive.google.com/drive/folders/1xaPaLQnRFnHFVgOrhZ_8RSYymp-Q9FqJ?usp=sharing), and put files under `3Dfacedeblurring/checkpoints`.   
   
 
