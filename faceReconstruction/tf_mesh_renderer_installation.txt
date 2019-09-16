@@ -1,0 +1,15 @@
+1.download tf_mesh_renderer https://github.com/google/tf_mesh_renderer and unzip the file.
+
+2.install bazel on ubuntu:
+2.1 sudo apt-get install pkg-config zip g++ zlib1g-dev unzip python
+2.2 download bazel-0.21.0-installer-linux-x86_64.sh on https://github.com/bazelbuild/bazel/releases
+(wget https://github.com/bazelbuild/bazel/releases/download/0.21.0/bazel-0.21.0-installer-linux-x86_64.sh)
+2.3 run the bazel installer as follows:
+	chmod +x bazel-<version>-installer-linux-x86_64.sh 
+	./bazel-<version>-installer-linux-x86_64.sh --user
+
+3. go to root folder and run ./runtests.sh (modify the python path in this file)
+
+4. find rasterize_triangles_kernel.so in tf_mesh_renderer/bazel-genfiles/mesh_renderer/kernels
+
+5. copy it to mesh_render folder and replace the original file
