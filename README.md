@@ -13,7 +13,7 @@ tf_mesh_renderer: Please refer to `./faceReconstruction/tf_mesh_renderer_install
 # Running
 1. run `preprocess/generateAlignments.m` to generate `training_set/` or `testing_set/` and the image list of `datalist_train.txt` or `datalist_test.txt`. 
 
-2. run `facePointDetection/demo_landmark.m` to generate `dataset/[videos_folder_list]/face/`，and `dataset/[videos_folder_list]/bbox.txt`, where "bbox.txt" is the detected five key points of faces. For more information, please refer to [Deep Convolutional Network Cascade for Facial Point Detection](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm)
+2. run `facePointDetection/demo_landmark.m` to generate `dataset/[videos_folder_list]/face/`，and `dataset/[videos_folder_list]/bbox.txt`, where "bbox.txt" is the detected five key points of faces. For more information about face key points detection, please refer to [Deep Convolutional Network Cascade for Facial Point Detection](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm)
 
 3. run `demo.py` to generate the 3D facial relevant vector under `training_set/[videos_folder_list]/face/`.
 
