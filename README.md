@@ -19,6 +19,14 @@ tf_mesh_renderer: Please refer to `./faceReconstruction/tf_mesh_renderer_install
 
 4. run `demo_render.py` to generate the rendered face results under `dataset/[videos_folder_list]/face_render/`.  
 
+5. run run_model.py to train a model or test your own videos. For example 
+```
+# Training
+python run_model.py --phase=train --gpu=0 --datalist=<'./datalist_train.txt'>
+# Testing
+python run_model.py --phase=test --gpu=0 --datalist=<'./datalist_test.txt'> --input_path=<'./testing_set'> --output_path=<'./testing_results>' 
+```
+
 
 # Pre-trained models
 Download the [pre-trained model](https://drive.google.com/drive/folders/1xaPaLQnRFnHFVgOrhZ_8RSYymp-Q9FqJ?usp=sharing), and put files under `3Dfacedeblurring/checkpoints`.   
