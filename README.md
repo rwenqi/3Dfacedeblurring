@@ -7,7 +7,7 @@ Existing face deblurring methods only consider single frames and do not account 
 # Installation
 Install required packages:
 
-tf_mesh_renderer: Please refer to `./faceReconstruction/tf_mesh_renderer_installation.txt`
+tf_mesh_renderer: Please refer to `./faceReconstruction/tf_mesh_renderer_installation.txt` and [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction)
 
 
 # Running
