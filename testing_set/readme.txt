@@ -1,0 +1,2 @@
+run preprocess/generateAlignments.m to generate the folder of 'training_set/' and '/datalist_train.txt'
+run preprocess/generateAlignments_test.m to generate the folder of 'testing_set/' and '/datalist_test.txt'
