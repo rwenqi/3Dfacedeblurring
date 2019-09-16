@@ -4,19 +4,20 @@ Wenqi Ren, Jiaolong Yang, Senyou Deng, David Wipf, Xiaochun Cao, and Xin Tong
 
 Existing face deblurring methods only consider single frames and do not account for facial structure and identity information. These methods struggle to deblur face videos that exhibit significant pose variations and misalignment. In this paper we propose a novel face video deblurring network capitalizing on 3D facial priors. The model consists of two main branches: i) a face video deblurring subnetwork based on an encoder-decoder architecture, and ii) a 3D face reconstruction and rendering branch for predicting 3D priors of salient facial structures and identity knowledge. These structures encourage the deblurring branch to generate sharp faces with detailed structures. Our method leverages both image intensity and high-level identity information derived from the reconstructed 3D faces to deblur the input face video. Extensive experimental results demonstrate that the proposed algorithm performs favorably against the state-of-the-art methods.
 
-# Setup
-1. run preprocess/generateAlignments.m to generate "training_set or testing_set" and the image list of datalist_train.txt or datalist_test.txt. 
+# Installation
 
-2. run facePointDetection/demo_landmark.m to generate “dataset/视频/face”文件，同时对应的bbox.txt拷贝到“dataset/视频”路径下。这里的bbox.txt就是检测出来的key points.具体内容参考 ./ facePointDetection/readme.txt
+
+# Running
+1. run `preprocess/generateAlignments.m` to generate `training_set/` or `testing_set/` and the image list of `datalist_train.txt` or `datalist_test.txt`. 
+
+2. run `facePointDetection/demo_landmark.m` to generate `dataset/videos_folder_list/face/`，and `dataset/videos_folder_list/bbox.txt`, where "bbox.txt" is the detected key points. For more information, please refer to [Deep Convolutional Network Cascade for Facial Point Detection](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm)
+
+3. 
 
 
 # Scripts and pre-trained models
-The pre-trained model can be downloaded from Models (https://drive.google.com/drive/folders/1xaPaLQnRFnHFVgOrhZ_8RSYymp-Q9FqJ?usp=sharing).      
-Users can use 
-
-python run_model.py --phase=test --datalist='./datalist_test.txt' --input_path='./testing_set' --output_path='./testing_results'
-
-to generate the results.  
+Download the [pre-trained model](https://drive.google.com/drive/folders/1xaPaLQnRFnHFVgOrhZ_8RSYymp-Q9FqJ?usp=sharing), and put files under `3Dfacedeblurring/checkpoints`.   
+  
 
 
 # Citations
