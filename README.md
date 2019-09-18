@@ -32,6 +32,8 @@ python run_model.py --phase=test --gpu=0 --datalist=<'./datalist_test.txt'> --in
 Download the [pre-trained 3d rendering model](https://drive.google.com/drive/folders/1Y4h37OigbHvZyNGd4NvbZXR1NUzI9qPS?usp=sharing), and put files under `faceReconstruction/network/` and `faceReconstruction/BFM/`
 
 Download the [pre-trained deblurring model](https://drive.google.com/drive/folders/1xaPaLQnRFnHFVgOrhZ_8RSYymp-Q9FqJ?usp=sharing), and put files under `3Dfacedeblurring/checkpoints`.   
+
+We also train a network using blurry face videos synthesized by 9 consecutive frames. The trained model can be downloaded from [pre-trained deblurring model by 9 frames]().
   
 # Model
 The parameter of `--face` means the different configuration of network. `--face=both` means using both rendered face and facial vector. `--face=render` denotes only using rendered face. `--face=coeff` represents that only using the face vector without 3D rendered face. 
