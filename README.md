@@ -55,6 +55,12 @@ Shuochen Su, Mauricio Delbracio, Jue Wang, Guillermo
 Sapiro, Wolfgang Heidrich, and Oliver Wang. Deep video
 deblurring for hand-held cameras. In CVPR, 2017.
 
+Seungjun Nah, Tae Hyun Kim, and Kyoung Mu Lee. Deep
+multi-scale convolutional neural network for dynamic scene
+deblurring. In CVPR, 2017.
+
+Grigorios G Chrysos and Stefanos Zafeiriou. Deep face deblurring. In CVPRW, 2017
+
 Xin Tao, Hongyun Gao, Xiaoyong Shen, Jue Wang, and Jiaya Jia. Scale-recurrent network for deep image deblurring.
 In CVPR, 2018.
 
