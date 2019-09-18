@@ -45,6 +45,9 @@ Please cite this paper in your publications if it helps your research:
 &nbsp;year = {2019}   
 }
 
+# Acknowledge
+Our deblurring branch is based on the implementation of [Tao et al. CVPR 2018](https://github.com/jiangsutx/SRN-Deblur), Thanks for the sharing.
+
 # Reference
 Shuochen Su, Mauricio Delbracio, Jue Wang, Guillermo
 Sapiro, Wolfgang Heidrich, and Oliver Wang. Deep video
@@ -59,5 +62,3 @@ weakly-supervised learning: From single image to image set.
 In CVPR Workshop on Analysis and Modeling of Faces and
 Gestures, 2019. 
 
-# Acknowledge
-Our deblurring branch is based on the implementation of [Tao et al. CVPR 2018](https://github.com/jiangsutx/SRN-Deblur), Thanks for the sharing.
