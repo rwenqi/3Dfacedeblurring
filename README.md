@@ -33,7 +33,8 @@ Download the [pre-trained 3d rendering model](https://drive.google.com/drive/fol
 
 Download the [pre-trained deblurring model](https://drive.google.com/drive/folders/1xaPaLQnRFnHFVgOrhZ_8RSYymp-Q9FqJ?usp=sharing), and put files under `3Dfacedeblurring/checkpoints`.   
   
-
+# Model
+The parameter of `--face` means the different configuration of network. `--face=both` means using both rendered face and facial vector. `--face=render` denotes only using rendered face. `--face=coeff` represents that only using the face vector without 3D rendered face. 
 
 # Citations
 Please cite this paper in your publications if it helps your research:    
