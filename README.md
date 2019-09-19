@@ -47,7 +47,7 @@ Please cite this paper in your publications if it helps your research:
 &nbsp;year = {2019}   
 }
 
-# Acknowledge
+# Acknowledgement
 Our deblurring branch is based on the implementation of [Tao et al. CVPR 2018](https://github.com/jiangsutx/SRN-Deblur), Thanks for the sharing.
 
 # Reference
